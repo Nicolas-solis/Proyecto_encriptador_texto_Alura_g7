@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Jersey+10&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+
+    --color-fondo:#1e1e1f ;
+    
+
+}
+
+.body{
+
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    
+    
+}
+.main{
+    
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    color:rgb(249, 249, 249);
+    position: relative;
+    width: 100vw;
+    height: 100vh;    
+   
+    
+}
+
+.texto{
+    
+    position: absolute;
+    width: 30%;
+    height: 35%;
+    left: 10%;
+    top: 10%;
+    border: double;
+    background: none;
+    border-color:#dfe0e6;
+    border-radius: 15px;
+    color: white;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.instrucciones{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    gap: 8%;
+    position: absolute;
+    width: 40%;
+    left: 11%;
+    top: 48%;
+}
+.instrucciones p {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 15px;
+}
+
+.botones{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    position: absolute;
+    padding:2% ;
+    top: 50%;
+    left:5%;
+}
+.boton2{
+    display: none;
+    display: flex;
+    position: absolute;
+    left: 100%;
+    gap: 20px;
+}
+.boton_limpiar:hover{
+    background-color: #191cd0;
+}
+.boton_copiar:hover{
+    background-color: #191cd0;
+}
+.boton_limpiar{
+
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    border: double;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: 700;
+    transition: .3s; 
+    cursor: pointer;
+
+}
+.boton_copiar{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    border: double;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: 700;
+    transition: .3s; 
+    cursor: pointer;
+
+}
+
+
+
+
+
+.boton_encriptar{
+   
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    border: double;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: 700;
+    transition: .3s; 
+    cursor: pointer;
+
+}
+.boton_encriptar:hover{
+    background-color: #191cd0;
+}
+.boton_desencriptar{
+    background-color: black;
+    color:white;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 20px;
+    border: double;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: 700;
+    transition: 0.3s; 
+    cursor:pointer;
+ 
+
+}
+.boton_desencriptar:hover{
+    background-color: #191cd0;
+
+}
+/* estilizacion de segundo panel de encriptacion, donde se ve el texto encriptado*/
+
+ .texto_encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    left: 50%;
+    top: 6%;
+    
+ }
+
+ .titulos_segundo_panel{
+  display: flex;  
+  justify-content: center;
+  flex-direction: column;
+  position:absolute;
+  width: 90%;
+  top:10%;
+  text-align: center;
+
+ }
+
+ .texto_encriptado img {
+    padding: 2% 5%;
+ }
+ .mensaje_segundo-panel{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 24px;
+    font-weight: 400;
+ }
+ .titulos_segundo_panel h1{
+    width: 50%;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    
+    
+ }
+ .titulos_segundo_panel p{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+ }   
+.mensaje_encriptacion{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    justify-content: center;
+}
+
+.mensaje_encriptacion h1{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 16px;
+    font-weight:400;
+    
+}
+ .texto_encriptado img {
+    position: absolute;
+    left: 55%;
+    width: 70%;
+    height: 40%;
+    top: 5%
+   
+ }
+.mensaje_segundo-panel{
+    color: #e6dfe1;
+    position: absolute;
+    left: 0%;
+    width: 60%;
+    top: 5%;
+    height: 40%;
+    background:none;
+    border:double;
+    border-color: white;
+    border-radius: 15px;
+
+}
+ .Creditos{
+    background-color: #151515;
+    color:rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    width: 100vw;
+    margin-top: 0%;
+    padding: 10px;
+    transition: all;
+    
+
+ }
+ .encabezado{
+    background-color: #151515;
+    transition: 1.0s;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: white; 
+    padding: 2% 10% ;
+    width: 100vw;
+
+ }
+.lupa_encabezado{
+    position: absolute;
+    left:90%;
+}
+
+@media (max-width: 45.5em) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .texto{
+        width: 80%;
+        height: 30%;
+        left: 10%;
+        top: 2%
+    }
+    .encriptador_funciones{
+        width: 100%;
+
+    }
+    .instrucciones {
+        width: 60%;
+        left: 10%;
+        top: 35%;
+      }
+
+      .texto_encriptado{
+        width: 80%;
+        height: 30%;
+        left: 5%;
+        top: 65%;
+
+      }
+      .botones{
+        left: 3%;
+        top:40%;
+        flex-direction:column;
+        width: 30%;
+        font-size: 0.1px;
+      }
+    .boton2{
+        
+        flex-direction:column;
+        width: 100%;
+        font-size: 0.5px;  
+    }
+    .boton_encriptar,.boton_desencriptar, .boton_copiar,.boton_limpiar{
+        font-size: 10px;
+    }
+    .mensaje_segundo-panel{
+        top: 2%;
+        height: 70%;
+        width: 55%;
+    }
+    .titulos_segundo_panel{
+        top:20%;;
+    }
+    .titulos_segundo_panel h1{
+        font-size: 15px;
+    }
+    .titulos_segundo_panel p {
+        font-size: 10px;
+    }
+  
+    .texto_encriptado img{
+        top: 15%;
+        left: 50%;
+    }
+    .texto_encriptado .mensaje_encriptacion  {
+        font-size: 10px;
+        top: 90%;
+    }
+    .Creditos{
+        font-size:10px;
+    }
+
+}
